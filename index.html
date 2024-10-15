@@ -1,7 +1,48 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
+    <head>
+        <style>
+            section{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 300px;
+            }
+            .num {
+                display:flex;
+            }
+            #numinput {
+                color:black;
+                text-align: center;
+                font-size: 30px;
+                width: 240px;
+                height: 48px;
+                border: 4px solid black;
+            }
+            #enter {
+                font-size: 30px;
+                width: 80px;
+            }
+            #textinput {
+                color:black;
+                text-align: center;
+                font-size: 30px;
+                width: 960px;
+                height: 48px;
+                border: 4px solid yellow;
+                outline: none;
+            }
+        </style>
+    </head>
     <body>
-        <script src="index.js"></script>
+        <section>
+            <div class="num">
+                <input type="number" id="numinput" min="0" max="1000000000">
+                <button id="enter">enter</button>
+            </div>
+            <input type="text" id="textinput" placeholder="" readonly>
+        </section>
+        <script src="index.js" defer></script>
     </body>
 </html>
