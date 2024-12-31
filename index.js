@@ -33,4 +33,4 @@ function onEntered(){
     }
     text.value=ret;
 }
-document.getElementById("numinput").addEventListener("change",onEntered);
+document.getElementById("numinput").addEventListener("input",onEntered);
