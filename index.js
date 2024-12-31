@@ -10,19 +10,19 @@ function onEntered(){
     let text=document.getElementById("textinput"),ret="";
     let com=0;
     if(numv.length==0){
-        text.value=`Error`+(com?`: Please type a number above.`:``);
+        text.value=`ERR`+(com?`: Please type a number above.`:``);
         return;
     }
     if(num>=n){
-        text.value=`Error`+(com?`: The number must be less than ${n}.`:``);
+        text.value=`ERR`+(com?`: The number must be less than ${n}.`:``);
         return;
     }
     if(num<=1){
-        text.value=`Error`+(com?`: The number must be greater than 1.`:``);
+        text.value=`ERR`+(com?`: The number must be greater than 1.`:``);
         return;
     }
     if(!Number.isInteger(num)){
-        text.value=`Error`+(com?`: The number must be an integer.`:``);
+        text.value=`ERR`+(com?`: The number must be an integer.`:``);
         return;
     }
     while(num>1){
