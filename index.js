@@ -8,7 +8,7 @@ function onEntered(){
     let numv=document.getElementById("numinput").value;
     let num=Number(numv);
     let text=document.getElementById("textinput"),ret="";
-    let com=1;
+    let com=0;
     if(numv.length==0){
         text.value=`Error`+(com?`: Please type a number above.`:``);
         return;
@@ -33,5 +33,4 @@ function onEntered(){
     }
     text.value=ret;
 }
-document.getElementById("enter").addEventListener("click",onEntered);
 document.getElementById("numinput").addEventListener("change",onEntered);
