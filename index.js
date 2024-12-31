@@ -18,7 +18,7 @@ function onEntered(){
         return;
     }
     if(num<=1){
-        text.value=`Error`+(com?`: The number must be greater than or equal to 2.`:``);
+        text.value=`Error`+(com?`: The number must be greater than 1.`:``);
         return;
     }
     if(!Number.isInteger(num)){
@@ -34,6 +34,4 @@ function onEntered(){
     text.value=ret;
 }
 document.getElementById("enter").addEventListener("click",onEntered);
-document.getElementById("numinput").addEventListener("input",ev=>{
-    onEntered();
-})
+document.getElementById("numinput").addEventListener("change",onEntered);
